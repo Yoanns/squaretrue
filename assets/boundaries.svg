@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="300" viewBox="0 0 880 300" role="img" aria-labelledby="t d">
+  <title id="t">Fast where it is safe, careful where it counts</title>
+  <desc id="d">Squaretrue moves quickly on reversible choices, defaults, grouped assumptions and existing patterns, and slows down at trust boundaries, irreversible actions, shared state, sensitive data and real cost.</desc>
+  <style>
+    .h{font:600 18px -apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+    .i{font:400 15px -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#FFFFFF}
+    .q{font:italic 400 15px Georgia,"Times New Roman",serif;fill:#AFC0E0}
+  </style>
+  <rect width="880" height="300" rx="16" fill="#1F2A44"/>
+  <rect x="24" y="24" width="404" height="200" rx="10" fill="#2B3A5E"/>
+  <rect x="452" y="24" width="404" height="200" rx="10" fill="#2B3A5E"/>
+  <text class="h" x="48" y="62" style="fill:#7FD1A8">Moves quickly on</text>
+  <text class="h" x="476" y="62" style="fill:#FF9E8A">Slows down at</text>
+  <g fill="#7FD1A8">
+    <rect x="48" y="88" width="9" height="9"/><rect x="48" y="120" width="9" height="9"/>
+    <rect x="48" y="152" width="9" height="9"/><rect x="48" y="184" width="9" height="9"/>
+  </g>
+  <g fill="#FF9E8A">
+    <rect x="476" y="88" width="9" height="9"/><rect x="476" y="120" width="9" height="9"/>
+    <rect x="476" y="152" width="9" height="9"/><rect x="476" y="184" width="9" height="9"/>
+  </g>
+  <text class="i" x="70" y="98">Reversible, low-risk choices</text>
+  <text class="i" x="70" y="130">Sensible defaults, disclosed</text>
+  <text class="i" x="70" y="162">Minor unknowns, grouped as assumptions</text>
+  <text class="i" x="70" y="194">Reusing what the codebase already has</text>
+  <text class="i" x="498" y="98">Trust boundaries and access control</text>
+  <text class="i" x="498" y="130">Irreversible or destructive actions</text>
+  <text class="i" x="498" y="162">Shared state: push, deploy, publish</text>
+  <text class="i" x="498" y="194">Sensitive data and real cost</text>
+  <text class="q" x="440" y="266" text-anchor="middle">Move quickly on reversible decisions. Slow down at trust boundaries,</text>
+  <text class="q" x="440" y="286" text-anchor="middle">irreversible actions, and expensive commitments.</text>
+</svg>

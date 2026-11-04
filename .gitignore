@@ -1,0 +1,5 @@
+# Local agent-to-agent discussions are not part of the published project.
+/agents_exchanges/
+
+# Keep the internal specification out of Git and GitHub.
+/squaretrue-specification*.md

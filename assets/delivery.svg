@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="330" viewBox="0 0 880 330" role="img" aria-labelledby="t d">
+  <title id="t">An example Squaretrue delivery report</title>
+  <desc id="d">Illustrative delivery report: outcome Verified, what was built, which checks ran and their results, documentation updated, and a marked shortcut listed as a limitation.</desc>
+  <style>
+    .k{font:600 14px Consolas,"SFMono-Regular",Menlo,monospace;fill:#E8A33D}
+    .v{font:400 14px Consolas,"SFMono-Regular",Menlo,monospace;fill:#E6EBF5}
+    .m{font:400 14px Consolas,"SFMono-Regular",Menlo,monospace;fill:#8C9AB8}
+    .b{font:600 13px -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#0F3D2A}
+    .n{font:400 12px -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#8C9AB8}
+  </style>
+  <rect width="880" height="330" rx="16" fill="#1F2A44"/>
+  <rect x="24" y="24" width="832" height="282" rx="10" fill="#111A2E"/>
+  <circle cx="48" cy="46" r="6" fill="#FF6F61"/><circle cx="68" cy="46" r="6" fill="#E8A33D"/><circle cx="88" cy="46" r="6" fill="#7FD1A8"/>
+  <text class="m" x="440" y="51" text-anchor="middle">"Add customer search by name or email."</text>
+  <path d="M24 68H856" stroke="#2B3A5E"/>
+  <text class="k" x="48" y="104">Outcome</text>
+  <rect x="200" y="87" width="82" height="24" rx="12" fill="#7FD1A8"/>
+  <text class="b" x="241" y="104" text-anchor="middle">Verified</text>
+  <text class="k" x="48" y="140">Built</text>
+  <text class="v" x="200" y="140">Partial, case-insensitive search on name or email</text>
+  <text class="k" x="48" y="172">Verified</text>
+  <text class="v" x="200" y="172">npm test: 48 passed · empty and no-result states checked</text>
+  <text class="k" x="48" y="204">Documentation</text>
+  <text class="v" x="200" y="204">docs/features/customer-search.md updated</text>
+  <text class="k" x="48" y="236">Limitations</text>
+  <text class="v" x="200" y="236">shortcut: filtered in memory · revisit beyond demo data</text>
+  <text class="k" x="48" y="268">Not verified</text>
+  <text class="v" x="200" y="268">Screen-reader announcement of result count</text>
+  <text class="n" x="832" y="294" text-anchor="end">Illustrative example</text>
+</svg>

@@ -1,0 +1,8 @@
+{
+  "name": "squaretrue",
+  "version": "0.1.0",
+  "description": "Agent-agnostic development workflow: build quickly, build coherently, keep the knowledge.",
+  "author": { "name": "Yoann Senin", "email": "yoanns@gmail.com" },
+  "license": "MIT",
+  "skills": "./skills/"
+}

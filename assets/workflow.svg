@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="230" viewBox="0 0 880 230" role="img" aria-labelledby="t d">
+  <title id="t">The Squaretrue workflow</title>
+  <desc id="d">Understand, shape, build, verify, document, deliver, with verify and document looping back to build to correct material gaps.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M1 1L8 5L1 9" fill="none" stroke="#E8A33D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <style>
+    .h{font:600 16px -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#FFFFFF}
+    .s{font:400 12px -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#AFC0E0}
+    .t{font:600 18px -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#FFFFFF}
+    .l{font:400 12px -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#E8A33D}
+  </style>
+  <rect width="880" height="230" rx="16" fill="#1F2A44"/>
+  <text class="t" x="440" y="42" text-anchor="middle">One continuous workflow. No approval gates.</text>
+  <g>
+    <rect x="20" y="70" width="120" height="70" rx="8" fill="#2B3A5E"/>
+    <text class="h" x="80" y="100" text-anchor="middle">Understand</text>
+    <text class="s" x="80" y="120" text-anchor="middle">Read first</text>
+    <rect x="164" y="70" width="120" height="70" rx="8" fill="#2B3A5E"/>
+    <text class="h" x="224" y="100" text-anchor="middle">Shape</text>
+    <text class="s" x="224" y="120" text-anchor="middle">Smallest solution</text>
+    <rect x="308" y="70" width="120" height="70" rx="8" fill="#2B3A5E"/>
+    <text class="h" x="368" y="100" text-anchor="middle">Build</text>
+    <text class="s" x="368" y="120" text-anchor="middle">Safe slices</text>
+    <rect x="452" y="70" width="120" height="70" rx="8" fill="#2B3A5E"/>
+    <text class="h" x="512" y="100" text-anchor="middle">Verify</text>
+    <text class="s" x="512" y="120" text-anchor="middle">Evidence first</text>
+    <rect x="596" y="70" width="120" height="70" rx="8" fill="#2B3A5E"/>
+    <text class="h" x="656" y="100" text-anchor="middle">Document</text>
+    <text class="s" x="656" y="120" text-anchor="middle">What exists</text>
+    <rect x="740" y="70" width="120" height="70" rx="8" fill="#E8A33D"/>
+    <text class="h" x="800" y="100" text-anchor="middle" style="fill:#1F2A44">Deliver</text>
+    <text class="s" x="800" y="120" text-anchor="middle" style="fill:#1F2A44">Honest report</text>
+  </g>
+  <g stroke="#E8A33D" stroke-width="1.8" fill="none" marker-end="url(#a)">
+    <path d="M141 105H162"/><path d="M285 105H306"/><path d="M429 105H450"/><path d="M573 105H594"/><path d="M717 105H738"/>
+    <path d="M512 141V172H368V144"/>
+    <path d="M656 141V172H512"/>
+  </g>
+  <text class="l" x="512" y="196" text-anchor="middle">Correct material gaps</text>
+</svg>

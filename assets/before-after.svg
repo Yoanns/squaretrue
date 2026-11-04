@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="330" viewBox="0 0 880 330" role="img" aria-labelledby="t d">
+  <title id="t">Your coding agent, before and after Squaretrue</title>
+  <desc id="d">Before: claims done without running tests, hides shortcuts, leaves docs stale, asks endlessly or not at all, and touches shared state. After: outcomes backed by checks it ran, shortcuts marked in code, docs updated or gaps reported, questions only when they matter, and no shared-state changes without your authorization.</desc>
+  <style>
+    .h{font:600 19px -apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+    .i{font:400 15px -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#E6EBF5}
+    .o{font:400 15px -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#8C9AB8;text-decoration:line-through}
+    .x{font:700 16px -apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+  </style>
+  <rect width="880" height="330" rx="16" fill="#1F2A44"/>
+  <rect x="24" y="24" width="404" height="282" rx="10" fill="#172238"/>
+  <rect x="452" y="24" width="404" height="282" rx="10" fill="#2B3A5E" stroke="#E8A33D" stroke-width="1.5"/>
+  <text class="h" x="48" y="64" style="fill:#8C9AB8">Your agent today</text>
+  <text class="h" x="476" y="64" style="fill:#E8A33D">Your agent on Squaretrue</text>
+  <g class="x" style="fill:#FF6F61">
+    <text x="48" y="110">✕</text><text x="48" y="150">✕</text><text x="48" y="190">✕</text><text x="48" y="230">✕</text><text x="48" y="270">✕</text>
+  </g>
+  <g class="x" style="fill:#7FD1A8">
+    <text x="476" y="110">✓</text><text x="476" y="150">✓</text><text x="476" y="190">✓</text><text x="476" y="230">✓</text><text x="476" y="270">✓</text>
+  </g>
+  <text class="o" x="74" y="110">“Done!” The tests never ran</text>
+  <text class="o" x="74" y="150">Shortcuts buried, found in production</text>
+  <text class="o" x="74" y="190">Docs describe last quarter’s code</text>
+  <text class="o" x="74" y="230">Twenty questions, or none at all</text>
+  <text class="o" x="74" y="270">“Quick test” that hit a shared database</text>
+  <text class="i" x="502" y="110">Every outcome backed by checks it ran</text>
+  <text class="i" x="502" y="150">Every shortcut marked where it lives</text>
+  <text class="i" x="502" y="190">Docs updated, or gaps reported</text>
+  <text class="i" x="502" y="230">Asks only when the answer matters</text>
+  <text class="i" x="502" y="270">No shared-state changes without your OK</text>
+</svg>
