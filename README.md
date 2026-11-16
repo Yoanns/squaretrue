@@ -13,6 +13,11 @@
 </p>
 
 <p align="center">
+  Squaretrue is a workflow plugin for Claude Code, also available as Agent Skills and Markdown instructions for other coding agents.
+  It guides each task through implementation, checks, documentation, and an honest report of what was and wasn't verified.
+</p>
+
+<p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-1F2A44?style=flat-square" alt="MIT license"></a>
   <img src="https://img.shields.io/badge/status-prototype-E8A33D?style=flat-square" alt="Status: prototype">
   <img src="https://img.shields.io/badge/Claude%20Code-plugin-1F2A44?style=flat-square" alt="Claude Code plugin">
@@ -104,6 +109,8 @@ It's written for any coding agent that reads Markdown instructions, and ships re
 
 ### Claude Code (recommended)
 
+Requires Claude Code v2.1.292 or later for the recommended installation commands below. Check your version with `claude --version`.
+
 Run this once in a terminal:
 
 ```bash
@@ -149,24 +156,34 @@ git clone https://github.com/Yoanns/squaretrue.git
 
 **If your agent supports Agent Skills,** copy both skill folders, `squaretrue/skills/squaretrue` and `squaretrue/skills/squaretrue-setup`, into the skills directory your agent reads (see its documentation). Copy the folders whole: `squaretrue` needs its `references/` subfolder.
 
-**If your agent only reads an instruction file** (such as `AGENTS.md`), add these lines to it, replacing `<path>` with where you cloned the repository:
+**If your agent only reads an instruction file** (such as `AGENTS.md`), add these lines to it. Replace `<squaretrue-root>` with the full path to the cloned repository directory, the one containing this README:
 
 ```markdown
-Squaretrue workflow files. Load them only when I ask to use or set up Squaretrue:
-- Workflow: <path>/squaretrue/skills/squaretrue/SKILL.md
-- Setup: <path>/squaretrue/skills/squaretrue-setup/SKILL.md
+Load the workflow when this project's agent instructions contain a Squaretrue section, or when I explicitly ask to use it for a task.
+Load setup only when I explicitly ask to set up Squaretrue.
+- Workflow: <squaretrue-root>/skills/squaretrue/SKILL.md
+- Setup: <squaretrue-root>/skills/squaretrue-setup/SKILL.md
 ```
 
 ### Start using it
 
-In any project, say:
+Installing makes Squaretrue available; it does not opt a project in. Say "Set up Squaretrue" to use it for future coding tasks in that project, or "Use Squaretrue for this" to apply it to one task without project setup.
 
 | Say | What happens |
 |---|---|
 | **"Set up Squaretrue"** | The agent proposes a short `Squaretrue` section for your instruction file, covering documentation mode, action policy and handoff location, and writes it once you approve |
 | **"Use Squaretrue for this"** | It runs on this one task, with no setup needed |
 
-It stays out of your way until you ask: installed never means activated.
+Installation alone does not opt a project in. Without project setup, one-task use defaults to `report-only`: documentation notes stay in the delivery report rather than being written to documentation files.
+
+A complete first request looks like this:
+
+```text
+Use Squaretrue for this task: add a regression test for [describe a known bug],
+then fix it. Keep unrelated refactoring out of scope.
+```
+
+The agent first states the goal, acceptance checks, and scope exclusions. Its final report distinguishes what was implemented, what was checked, and what remains uncertain.
 
 <details>
 <summary><strong>What's inside</strong></summary>
