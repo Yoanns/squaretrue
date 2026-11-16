@@ -50,7 +50,7 @@ You didn't get an assistant. You got a second job: watching it.
   <img src="assets/workflow.svg" width="880" alt="Workflow: Understand, Shape, Build, Verify, Document, Deliver, with a loop back to Build to correct material gaps">
 </p>
 
-You ask once. Before writing a line, the agent tells you what **done** looks like and what's **not included**, so you can steer in seconds instead of after review. Then it gets to work:
+You ask once, including anything that's out of scope, and the agent gets to work:
 
 - **It reads before it writes.** It learns your patterns and components and uses them, instead of inventing new ones.
 - **It builds the smallest complete change.** No speculative abstractions, and no surprise refactors.
@@ -183,7 +183,7 @@ Use Squaretrue for this task: add a regression test for [describe a known bug],
 then fix it. Keep unrelated refactoring out of scope.
 ```
 
-The agent first states the goal, acceptance checks, and scope exclusions. Its final report distinguishes what was implemented, what was checked, and what remains uncertain.
+The agent keeps to that scope. Its final report distinguishes what was implemented, what was checked, and what remains uncertain.
 
 <details>
 <summary><strong>What's inside</strong></summary>
@@ -206,7 +206,7 @@ The agent first states the goal, acceptance checks, and scope exclusions. Its fi
 No. Squaretrue instructs the agent not to push, deploy, publish or change shared state without authorization from you and your agent host. Your host's existing permissions still apply; Squaretrue works within them, it doesn't replace them.
 
 **Won't all this discipline slow it down?**
-Not where it doesn't belong. A small task gets a two-line plan and a short report; effort scales with risk, so the ceremony stays off the easy work.
+Not where it doesn't belong. A small task gets a short report; effort scales with risk, so the ceremony stays off the easy work.
 
 **Do I have to change how my team works?**
 No. Squaretrue follows your conventions, your instruction files and your policies. Where your rules are stricter, yours win.
