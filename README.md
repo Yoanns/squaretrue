@@ -102,17 +102,64 @@ It's written for any coding agent that reads Markdown instructions, and ships re
 
 ## Get started in a minute
 
-**Claude Code**
+### Claude Code (recommended)
+
+Run this once in a terminal:
 
 ```bash
-claude --plugin-dir /path/to/squaretrue
+claude plugin install squaretrue --marketplace Yoanns/squaretrue
 ```
 
-**Any skills-compatible agent:** copy `skills/squaretrue` and `skills/squaretrue-setup` into your agent's skills folder.
+Or, inside a Claude Code session, type `/plugin install squaretrue --marketplace Yoanns/squaretrue`.
 
-**Any other agent:** point its instruction file at [`skills/squaretrue/SKILL.md`](skills/squaretrue/SKILL.md), and at [`skills/squaretrue-setup/SKILL.md`](skills/squaretrue-setup/SKILL.md) when you ask for setup. Keep the skill directories intact, including `skills/squaretrue/references/`.
+Then start a new Claude Code session. Squaretrue is installed for your user account, so it's available in every project. Check that it's there with:
 
-Then just say:
+```bash
+claude plugin list
+```
+
+To get the latest version later:
+
+```bash
+claude plugin update squaretrue
+```
+
+<details>
+<summary>Try it for one session without installing</summary>
+
+```bash
+git clone https://github.com/Yoanns/squaretrue.git
+```
+
+```bash
+claude --plugin-dir ./squaretrue
+```
+
+The plugin is loaded only for that session.
+
+</details>
+
+### Other coding agents
+
+First, get the files:
+
+```bash
+git clone https://github.com/Yoanns/squaretrue.git
+```
+
+**If your agent supports Agent Skills,** copy both skill folders, `squaretrue/skills/squaretrue` and `squaretrue/skills/squaretrue-setup`, into the skills directory your agent reads (see its documentation). Copy the folders whole: `squaretrue` needs its `references/` subfolder.
+
+**If your agent only reads an instruction file** (such as `AGENTS.md`), add these lines to it, replacing `<path>` with where you cloned the repository:
+
+```markdown
+Squaretrue workflow files. Load them only when I ask to use or set up Squaretrue:
+- Workflow: <path>/squaretrue/skills/squaretrue/SKILL.md
+- Setup: <path>/squaretrue/skills/squaretrue-setup/SKILL.md
+```
+
+### Start using it
+
+In any project, say:
 
 | Say | What happens |
 |---|---|

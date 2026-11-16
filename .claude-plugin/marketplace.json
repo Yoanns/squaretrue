@@ -1,0 +1,12 @@
+{
+  "name": "squaretrue",
+  "owner": { "name": "Yoann Senin" },
+  "description": "The Squaretrue development workflow for coding agents.",
+  "plugins": [
+    {
+      "name": "squaretrue",
+      "source": "./",
+      "description": "Agent-agnostic development workflow: build quickly, build coherently, keep the knowledge."
+    }
+  ]
+}
